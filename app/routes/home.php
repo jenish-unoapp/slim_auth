@@ -8,6 +8,7 @@
 
 
 $app->get('/', function () use ($app) {
+    echo $app->hash->hashPassword('hello123');
     echo $app->render('home.twig');
 })->name('home');
 
